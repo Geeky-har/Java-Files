@@ -20,6 +20,4 @@ public class RecFac{
 		
 		System.out.println("The factorial of " + " num" + " is: " + val);
 	}
-	
-	
 }
