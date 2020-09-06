@@ -1,9 +1,11 @@
+package matrix;
 import java.util.*;
 
-class MultiArray{
-	static void putArray(int mat[][], int m, int n){
+public class MultiArray{
+	public static int[][] putArray(int mat[][], int m, int n){
 		int i, j;
-		System.out.println("Enter the elements of the matrix: ");
+		// int mat[][] = new int[m][n];
+		// System.out.println("Enter the elements of the matrix: ");
 		Scanner sc = new Scanner(System.in);
 		for(i=0; i<m; i++){
 			for(j=0; j<n; j++){
@@ -12,11 +14,13 @@ class MultiArray{
 				mat[i][j] = item;
 			}
 		}
+		
+		return(mat);
 	}
 	
-	static void getArray(int mat[][], int m, int n){
+	public static void getArray(int mat[][], int m, int n){
 		int i, j;
-		System.out.println("Your matrix is: ");
+		// System.out.println("Your matrix is: ");
 		for(i=0; i<m; i++){
 			for(j=0; j<n; j++){
 				System.out.print(mat[i][j] + " ");
@@ -32,7 +36,11 @@ class MultiArray{
 		System.out.println("Enter number of cols: ");
 		c = sc.nextInt();
 		int mat[][] = new int[r][c];
-		putArray(mat, r, c);
-		getArray(mat, r, c);
+		
+		System.out.println("Enter the elements of the matrix: ");
+		int mat1[][] = putArray(mat, r, c);
+		
+		System.out.println("Your matrix is: ");
+		getArray(mat1, r, c);
 	}
 }
