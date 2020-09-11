@@ -1,6 +1,4 @@
-// import java.lang.*;
-
-class ObjClone implements Cloneable{
+class ObjClone implements Cloneable{	// implements Clonable interface for cloning
 	String name;
 	int emp_id;
 	
@@ -9,6 +7,7 @@ class ObjClone implements Cloneable{
 		this.emp_id = emp_id;
 	}
 	
+	// implementing clone method from Cloeable method
 	public Object clone()throws CloneNotSupportedException{ return super.clone(); }
 	
 	public static void main(String args[]){
