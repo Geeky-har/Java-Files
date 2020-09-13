@@ -18,5 +18,8 @@ class RunBank{
 	public static void main(String args[]){
 		Bank b1 = new SBI();
 		System.out.println("The rate of intrest in SBI is: " + b1.getInt());
+		
+		Bank b2 = new PNB();
+		System.out.println("The rate of intrest in PNB is: " + b2.getInt());
 	}
 }
