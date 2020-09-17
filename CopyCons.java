@@ -20,11 +20,15 @@ class CopyCons{
 	
 	public static void main(String args[]){
 		CopyCons cpy1 = new CopyCons(1001, "harsh negi");
-		CopyCons cpy2 = new CopyCons(cpy1);
+		cpy2.id = cpy1.id;  (alternative way)
+		cpy2.name = cpy1.name;  (alternative way)
 		cpy1.disp();
-		// cpy2.id = cpy1.id;  (alternative way)
-		// cpy2.name = cpy1.name;  (alternative way)
 		cpy2.disp();
 
 	}
 }
+
+
+
+
+
