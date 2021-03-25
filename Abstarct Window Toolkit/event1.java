@@ -17,8 +17,18 @@ class MyEvent extends Frame implements ActionListener{
 		
 		// Will register the listener
 		
-		b.addActionListener(this); // will pass current object instance
-		b2.addActionListener(this);
+		b.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				tf.setText("Thanks for clicking button 1!!");
+			}
+		});
+		
+		
+		b2.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				tf.setText("Thanks for clicking button 2!!");
+			}
+		});
 		
 		// Will add the components and set size
 		add(tf);
