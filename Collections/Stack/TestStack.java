@@ -22,6 +22,15 @@ class TestStack{
 		
 		System.out.println("Is the stack empty?? " + st.empty());
 		
+		System.out.println("Now removing top element...");
+		
+		st.pop();
+		
+		System.out.println("After removing top element: ");
+		
+		for(String str: st)
+			System.out.println(str);
+		
 		String key = "chacha";
 		
 		if(st.search(key) >= 0){
